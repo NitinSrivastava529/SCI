@@ -1,0 +1,18 @@
+/* .parent{
+    background: red;
+    height: 100vh;
+    width: 100vw;
+    display: flex;    
+    justify-content: center;
+    align-items:center;
+}
+.child{
+    background: #ffffff43;
+    color: #fff;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    border-radius:5px;
+} */
