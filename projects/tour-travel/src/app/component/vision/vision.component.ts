@@ -2,13 +2,13 @@ import { Component, inject, OnInit } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-vision',
   standalone: true,
   imports: [],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'     
+  templateUrl: './vision.component.html',
+  styleUrl: './vision.component.css'
 })
-export class AboutComponent implements OnInit {    
+export class VisionComponent  implements OnInit {    
   _global = inject(GlobalService)
   ngOnInit(): void {
     this._global.loadScript()

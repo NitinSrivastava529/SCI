@@ -1,0 +1,82 @@
+<section class="ftco-section contact-section ftco-no-pt">
+    <div class="container">
+        <div class="row block-9">
+            <div class="col-md-12 order-md-last d-flex">
+                <form [formGroup]="tourForm" (submit)="onSubmit()" class="bg-light contact-form">
+                    <h5 class="text-danger text-center">Upload New Tour</h5>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Title" formControlName="title">
+                        @if(tourForm.get('title')?.hasError('required') && tourForm.get('title')?.touched){
+                            <div class="text-danger">Title is required </div>
+                        }                    
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="College" formControlName="college">
+                        @if(tourForm.get('college')?.hasError('required') && tourForm.get('college')?.touched){
+                            <div class="text-danger">college is required </div>
+                        }                    
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Location" formControlName="location">
+                        @if(tourForm.get('location')?.hasError('required') && tourForm.get('location')?.touched){
+                            <div class="text-danger">location is required </div>
+                        }                    
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Years : YYYY" formControlName="year">
+                        @if(tourForm.get('year')?.hasError('required') && tourForm.get('year')?.touched){
+                            <div class="text-danger">year is required </div>
+                        }                    
+                    </div>
+                    <div class="form-group">
+                        <input type="file" (change)="handleUpload($event)" class="form-control" accept=".jpg,.jpeg,.png"/>                                    
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" value="Upload Tour" class="btn btn-primary py-3 px-5">
+                    </div>
+                </form>
+
+            </div>
+            <label class="col-md-12 text-danger text-center" *ngIf="loading().length>0">{{loading()}}</label>
+            @for(item of tours; track $index){
+                <div class="col-md-12 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="#" class="img" style="background-image: url({{item.image}});">
+                            <span class="price">Year : {{item.year}}</span>                         
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">{{item.college}}<i class="fa fa-trash text-danger pull-right" (click)="remove(item.key||'')" style="font-size: 18px;"></i></span>
+                            <h3><a href="#">{{item.title}}</a></h3>
+                            <p class="location"><span class="fa fa-map-marker"></span>{{item.location}}</p>                         
+                        </div>
+                    </div>
+                </div>
+                }
+            <!-- <div class="row">
+                @for(item of tours; track $index){
+                <div class="col-md-12 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="#" class="img" style="background-image: url({{item.image}});">
+                            <span class="price">Year : {{item.year}}</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">{{item.college}}</span>
+                            <h3><a href="#">{{item.title}}</a></h3>
+                            <p class="location"><span class="fa fa-map-marker"></span>{{item.location}}</p>                         
+                        </div>
+                    </div>
+                </div>
+                }
+            </div> -->
+            <!-- <div class="col-md-12 d-flex">
+               @for(tour of tours; track $index){
+                <div>
+                   <h6>{{tour.title}}</h6>
+                   <label>{{tour.college}}</label>
+                   <img [src]="tour.image" style="width: 100%;"/>
+                </div>
+               }
+            </div> -->
+        </div>
+    </div>
+</section>

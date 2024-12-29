@@ -12,6 +12,7 @@
   });
 
 
+
 	var fullHeight = function() {
 
 		$('.js-fullheight').css('height', $(window).height());
@@ -270,4 +271,6 @@
 
 
 })(jQuery);
-
+var ToggleCustom=function(){
+	$('.navbar-collapse').removeClass('show')	
+  }

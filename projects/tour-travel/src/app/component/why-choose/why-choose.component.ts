@@ -2,13 +2,13 @@ import { Component, inject, OnInit } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-why-choose',
   standalone: true,
   imports: [],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'     
+  templateUrl: './why-choose.component.html',
+  styleUrl: './why-choose.component.css'
 })
-export class AboutComponent implements OnInit {    
+export class WhyChooseComponent implements OnInit {
   _global = inject(GlobalService)
   ngOnInit(): void {
     this._global.loadScript()

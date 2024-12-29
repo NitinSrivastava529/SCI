@@ -1,4 +1,5 @@
-export interface tourInfo {
+export interface ITourInfo {
+    key?: string|'-';
     title: string;
     college:string;
     location: string;

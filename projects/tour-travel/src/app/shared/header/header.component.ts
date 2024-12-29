@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
-
+export class HeaderComponent implements OnInit {
+   _global = inject(GlobalService)
+ngOnInit(): void {
+  this._global.loadScript()
+}
 }
