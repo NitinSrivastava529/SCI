@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="121" viewBox="0 0 120 121">
+  <defs>
+    <filter id="Ellipse_622" x="0" y="0" width="120" height="121" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6351" data-name="Rectangle 6351" width="48" height="48" transform="translate(882 3179)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_15094" data-name="Group 15094" transform="translate(-847.5 -3144.5)">
+    <g transform="matrix(1, 0, 0, 1, 847.5, 3144.5)" filter="url(#Ellipse_622)">
+      <ellipse id="Ellipse_622-2" data-name="Ellipse 622" cx="37.5" cy="38" rx="37.5" ry="38" transform="translate(20.5 20.5)" fill="#fff"/>
+    </g>
+    <g id="Mask_Group_57" data-name="Mask Group 57" clip-path="url(#clip-path)">
+      <path id="Path_4018" data-name="Path 4018" d="M-573.966,1032.389h-34c0-.144.006-.287.006-.432V998.389h33.989v33.568C-573.971,1032.106-573.967,1032.247-573.966,1032.389Zm-26.7-26.769v.289q0,9.751.008,19.5a.667.667,0,0,0,.182.426q2.283,2.291,4.591,4.554a.766.766,0,0,0,.489.194q9.621.014,19.241.007c.117,0,.235-.01.354-.015V1027.6h-.445q-8.315,0-16.629.005a.745.745,0,0,1-.583-.239q-2.155-2.16-4.33-4.3a.705.705,0,0,1-.226-.551q.009-6.5,0-12.99v-.364h19.82v14.188c-.093,0-.167.012-.243.012q-4.752,0-9.5-.007a.682.682,0,0,1-.424-.189q-1.409-1.373-2.791-2.774a.767.767,0,0,1-.2-.485c-.014-1.882-.009-3.765-.008-5.648,0-.1.01-.212.015-.32h6.279v6.274h-3.618l-.052.089c.369.348.726.708,1.113,1.037a.884.884,0,0,0,.516.213c2.253.014,4.506.009,6.76.009H-580v-10.625h-16.182c0,.1-.012.185-.012.271q0,5.315.008,10.632a.716.716,0,0,0,.2.451c1.086,1.1,2.189,2.18,3.28,3.274a.718.718,0,0,0,.553.233q7.947-.01,15.9-.006c.117,0,.236-.009.354-.015v-20.163Zm-5.455-5.446v30.4h7.813c-.114-.12-.193-.208-.276-.291q-1.821-1.809-3.646-3.614a.735.735,0,0,1-.249-.575q.011-10.946.006-21.89v-.4h26.669v-3.631Z" transform="translate(1496.967 2187.611)" fill="#5188db"/>
+    </g>
+  </g>
+</svg>

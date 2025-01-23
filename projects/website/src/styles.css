@@ -1,1 +1,242 @@
-/* You can add global styles to this file, and also import other style files */
+.popup-login a.btn {
+    padding: 6px 20px;
+    background: #1e2f4b;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+@media(min-width: 768px) {
+    .popup-login a.btn {
+        min-width: 200px;
+    }
+
+    #newmodal .modal-dialog {
+        max-width: 520px;
+    }
+}
+ 
+
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #565657;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+  }
+
+  .banner-form .banner-form-card:before {
+    content: '';
+    background: #eef7ff;
+    width: 240px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    top: -190px;
+    left: -30px;
+    border-radius: 100px;
+    transform: rotate(45deg);
+  }
+
+  .banner-form .banner-form-card:after {
+    content: '';
+    background: #eef7ff;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    bottom: -190px;
+    right: -30px;
+    border-radius: 50px;
+    transform: rotate(45deg);
+  }
+
+  .homeslider:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #247cff 0, #fff 100%) no-repeat padding-box;
+    opacity: .2;
+    display: none;
+  }
+
+  .homeslider {
+    background: url("/web-data/edunext-website/img/sliderBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .banner-form .banner-form-card {
+    box-shadow: 0 0 15px 2px rgb(0 0 0 / 10%);
+    background: #FBFDFF;
+    position: relative;
+    border-radius: 12px;
+    padding: 30px 40px;
+    overflow: hidden;
+  }
+
+  section.banner-form {
+    overflow: visible;
+    margin-top: 0;
+  }
+  h6.forsale {
+    font-size: 21px;
+    font-weight: 600;
+    font-family: 'SegoeSemiBold';
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 15px;
+  }
+
+  .address-location {
+    position: relative;
+  }
+
+  .address-location img {
+    position: absolute;
+    top: 29px;
+    width: 14px;
+    margin-top: 0;
+  }
+
+  .address-location .address-revs {
+    margin-left: 28px;
+  }
+
+  div#baguetteBox-overlay {
+    display: none;
+  }
+
+  .foo-contacts .address-revs span {
+    color: #fff !important;
+  }
+
+  .contact-us-add {
+    border-radius: 14px 0 0 14px;
+    overflow: hidden;
+  }
+
+  .contact-us-view {
+    border-radius: 0 14px 14px 0;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .address-location .address-revs h6 {
+    font-size: 14px;
+    position: relative;
+  }
+
+  .address-location .address-revs p {
+    text-transform: none;
+    font-family: Segoe;
+    margin-bottom: 6px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .address-location .address-revs p img {
+    left: 0;
+    position: absolute !important;
+  }
+
+  .address-location img {
+    width: 22px;
+    top: 0px;
+  }
+
+  .address-location .address-revs h6:after {
+    content: '';
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    display: block;
+  }
+
+  .contact-us-branches {
+    background: #fff;
+    box-shadow: 4px 4px 20px #70AAFF3B;
+    border-radius: 14px;
+  }
+
+  .contact-us-branches .address-location .address-revs h6 {
+    color: #003078;
+  }
+
+  .contact-us-branches .address-location .address-revs h6:after {
+    background: #007bff;
+  }
+
+  .contact-us-branches .address-location .address-revs p,
+  .contact-us-branches .address-location .address-revs p a {
+    color: #333333 !important;
+  }
+
+  .sales-wrp .success-text div {
+    font-size: 24px;
+  }
+
+  .footer-dark,
+  .footer-dark a {
+    font-size: 14px;
+  }
+
+  @media (min-width: 992px) {
+    .foo-contacts {
+      margin-bottom: -30px;
+      z-index: 9;
+    }
+
+    .sales-wrp {
+      padding-top: 60px !important;
+    }
+  }
+
+  @media (max-width: 991px) {
+
+    .contact-us-view,
+    .foo-contacts .contact-us-add {
+      border-radius: 14px 14px 14px 14px;
+    }
+
+    .address-location .address-revs p img {
+      top: 0px !important;
+    }
+
+    .success-text.d-flex.align-items-center {
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .footer-top .offset-xl-1 {
+      margin-left: 1%;
+    }
+
+    .mw-158 {
+      min-width: 158px;
+    }
+  }

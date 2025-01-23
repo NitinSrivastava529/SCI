@@ -1,1 +1,197 @@
-<p>contact-us works!</p>
+<section class="big-section wow animate__fadeIn contact-wrp enquiry-form py-4 py-lg-5" id="enquiry-form">
+    <div class="container">
+      <div class="row contact-row-padding py-0">
+        <div class="col-12 col-md-7">
+          <div class="row">
+            <div class="col-12 col-md-12 text-left">
+              <h5 class="alt-font blue-color letter-spacing-minus-1px margin-bottom-10 font-size font-family-SegoeSemiBold wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="200ms">We're Always Ready</h5>
+              <div class="about-service wow animate__fadeInUp mb-4" data-wow-duration="2s" data-wow-delay="300ms">Get in touch with your Technology Partner.</div>
+            </div>
+          </div>
+          <!---------------- Enquiry Form Start ------------------>
+          <form id="frmContact" action="#" method="POST" novalidate="novalidate">
+    <input type="hidden" class="columnlabel" value="https://edunexttechnologies.com/index.php" name="errorpage" id="errorpage" />
+    <input type="hidden" class="columnlabel" value="https://edunexttechnologies.com/index.php" name="thankspage" id="thankspage" />
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="custom-field col wow animate__fadeInUp" data-wow-delay="100ms">
+            <div class="custom-field-inner">
+                <input class="medium-input inputTextBox mb-0 required" type="text" name="contact_personname" id="contact_personname11" placeholder="">
+                <label class="col-form-label font-family-SegoeSemiBold">Full Name</label>
+            </div>
+        </div>
+        <div class="custom-field col wow animate__fadeInUp" data-wow-delay="200ms">
+            <div class="custom-field-inner">
+                <input class="medium-input mb-0 required" type="email" name="emailid" id="emailid" placeholder="">
+                <label class="col-form-label font-family-SegoeSemiBold">Email ID</label>
+            </div>
+        </div>
+        <div class="custom-field col wow animate__fadeInUp" data-wow-delay="300ms">
+            <div class="custom-field-inner">
+                <input class="medium-input numbervalue mb-0" type="text" maxlength="16" name="phoneno" id="phoneno" placeholder="">
+                <label class="col-form-label font-family-SegoeSemiBold">Mobile Number</label>
+            </div>
+        </div>
+        <div class="custom-field col wow animate__fadeInUp" data-wow-delay="400ms">
+            <div class="custom-field-inner">
+                <input class="medium-input mb-0" type="text" name="orgname" id="orgname" placeholder="">
+                <label class="col-form-label font-family-SegoeSemiBold">School/Organization</label>
+            </div>
+        </div>
+        <div class="custom-field col wow animate__fadeInUp" data-wow-delay="500ms">
+            <div class="custom-field-inner">
+                <input class="medium-input mb-0" type="text" name="cityId" id="cityId" placeholder="">
+                <label class="col-form-label font-family-SegoeSemiBold">City</label>
+            </div>
+        </div>
+        <div class="custom-field col wow animate__fadeInUp" data-wow-delay="600ms">
+            <div class="custom-field-inner">
+                <input class="medium-input mb-0" type="text" name="website" id="website-form" placeholder="">
+                <label class="col-form-label font-family-SegoeSemiBold">Website</label>
+            </div>
+        </div>
+        <div class="custom-field col-md-12 wow animate__fadeInUp" data-wow-delay="700ms">
+            <div class="custom-field-inner">
+                <input class="medium-input mb-0" type="text" name="address" id="address" placeholder="">
+                <label class="col-form-label font-family-SegoeSemiBold">Address</label>
+            </div>
+        </div>
+        <div class="custom-field col-md-12 wow animate__fadeInUp" data-wow-delay="800ms">
+            <div class="custom-field-inner">
+                <textarea class="medium-textarea h-70px mb-0" rows="4" name="message" id="message" placeholder=""></textarea>
+                <label class="col-form-label font-family-SegoeSemiBold">Your Message</label>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div data-callback="imNotARobot" class="g-recaptcha d-flex text-center justify-content-center justify-content-md-start mb-3 mb-md-0" data-sitekey="6Lc7IaQdAAAAAC9AlKgIIsF9YrWs6wND0eluymBs"></div>
+        </div>
+        <div class="col-lg-4 text-center text-md-right d-md-flex justify-content-end align-items-center">
+            <input type="hidden" name="redirect" value="">
+
+            <button id="savebtn" class="btn btn-medium btn-fancy button mb-0 submit wow animate__zoomIn" type="button" onclick="submitenqReachus();" data-wow-duration="1s" data-wow-delay="800ms">SUBMIT</button>
+        </div>
+    </div>
+    <div class="form-results d-none"></div>
+</form>
+
+
+<script>
+    // var imNotARobot = function() {
+    //     $.ajax({
+    //         type: 'post',
+    //         url: 'varify_captcha.php',
+    //         data: $('#frmContact').serialize(),
+    //         type: 'POST',
+    //         success: function(result) {
+    //             if (result == 'success') {
+    //                 $("#savebtn").removeAttr('disabled');
+    //                 $("#savebtn").css('opacity', '1');
+    //             } else {
+    //                 alert(result);
+    //             }
+    //         }
+    //     });
+    // };
+
+
+    function submitenqReachus() {
+        var response = grecaptcha.getResponse();
+        var contact_personname = document.getElementById('contact_personname11').value;
+        var emailid = document.getElementById('emailid').value;
+        var phoneno = document.getElementById('phoneno').value;
+        var orgname = document.getElementById('orgname').value;
+        var cityId = document.getElementById('cityId').value;
+        var website = document.getElementById('website-form').value;
+        var address = document.getElementById('address').value;
+        var message = document.getElementById('message').value;
+        atpos = emailid.indexOf("@");
+        dotpos = emailid.lastIndexOf(".");
+        var msage = '';
+
+        if (contact_personname == '') {
+            alert("Kindly Enter Full Name");
+            return false;
+        } else if (emailid == '') {
+            alert("Kindly Enter Email Address");
+            return false;
+        } else if (atpos < 1 || (dotpos - atpos < 2)) {
+            alert("Kindly Enter Correct Email Id");
+            return false;
+        } else if (phoneno == '') {
+            alert('Kindly Enter Mobile No.');
+            return false;
+        } else if (isNaN(phoneno)) {
+            alert('Kindly Enter Valid Mobile No.');
+            return false;
+        } else if (orgname == '') {
+            alert("Kindly Enter School/Organisation Name");
+            return false;
+        } else if (cityId == '-1') {
+            alert("Kindly Enter city");
+            return false;
+        } else if (website == '') {
+            alert("Kindly Enter Website Name");
+            return false;
+        } else if (address == '') {
+            alert("Kindly Enter Address ");
+            return false;
+        } else if (message == '') {
+            alert("Kindly Enter Message");
+            return false;
+        } else if (response == 0) {
+            alert("Kindly tick the checkbox of the captcha to confirm this application form.");
+            return false;
+        } else {
+            $('#savebtn').attr('disabled', 'disabled');
+            $("#frmContact").attr('action', 'https://crm.edunexttechnologies.com/_taskqueue/updatelead');
+            $("#frmContact").submit();
+        }
+
+    }
+</script>          <!---------------- Enquiry Form End ------------------>        
+        </div>
+
+        <div class="col-12 col-md-5">
+          <div class="row">
+            <div class="col-12 fancy-box-item mb-4">
+              <div class="feature-box feature-box-left-icon-middle feature-box-dark-hover padding-2-rem-lr padding-2-rem-tb bg-white border-radius-5px overflow-hidden lg-padding-2-rem-lr h-100">
+                <div class="d-flex mb-4 align-items-center">
+                  <div class="feature-box-icon mr-3">
+                    <img src="images/edunexttechnologies_noida-mail.svg" alt="Best School Management Software Company in India">
+                  </div>
+                  <p class="mb-0">
+                    <a href="mailto:info@edunexttechnologies.com" class="">salesscijhs&commat;gmail.com</a>
+                    <!-- <a href="mailto:careers@edunexttechnologies.com" class="">careers@edunexttechnologies.com</a> -->
+                  </p>
+                </div>
+                <div class="row w-100">
+                  <div class="col-12 col-sm-7">
+                    <div class="d-flex mb-4 mb-lg-0">
+                      <div class="feature-box-icon mr-3">
+                        <img src="images/edunexttechnologies_noida-calling.svg" alt="Best School Management Software Company in India">
+                      </div>
+                      <p class="mb-0">
+                        <span class="alt-font font-weight-600 text-primary text-uppercase d-block font-family-SegoeBold font-size-14px wow animate__fadeInUp">HelpLine</span>
+                        <a href="tel:+917355335204" class="">+91 735 533 5204</a><br>
+                        <a href="tel:+919956108976" class="">+91 995 610 8976</a>
+                      </p>
+                    </div>
+                  </div>              
+                </div>
+                <div class="d-flex mb-4">
+              
+                  <p class="mb-0">
+                    <span class="alt-font font-weight-600 text-primary text-uppercase d-block font-family-SegoeBold font-size-14px wow animate__fadeInUp">REGISTERED OFFICE</span>
+                    <a>Nanak Ganj Sipri Bazar Jhansi -Uttar Pradesh India - 284003</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section -->
+  <style>
+
+  </style>
