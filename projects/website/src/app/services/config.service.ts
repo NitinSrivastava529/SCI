@@ -23,17 +23,25 @@ export class ConfigService {
       return this.http.get(constant.API_URL + data.url, data);
     }
     public loadScript() {
-      const jsArray = [
-        //'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js',
-        '/sci/js/jquery.min.js',
-        '/sci/js/bootstrap.min.js',
-        '/sci/js/owl.carousel.js',
-        '/sci/js/theme-vendors.min.js',
-        '/sci/js/main.js',
-        '/sci/js/wow.js',
-        '/js/feather.js',
-        '/js/baguetteBox.min.js',       
-        '/js/custom.js'     
+      const jsArray = [        
+        '/assets/js/plugins/jquery-3-6-0.min.js',
+        '/assets/js/plugins/bootstrap.min.js',         
+        '/assets/js/plugins/fontawesome.js',         
+        '/assets/js/plugins/aos.js',         
+        '/assets/js/plugins/counter.js',         
+        '/assets/js/plugins/gsap.min.js',         
+        '/assets/js/plugins/ScrollTrigger.min.js',         
+        '/assets/js/plugins/Splitetext.js',         
+        '/assets/js/plugins/sidebar.js',         
+        '/assets/js/plugins/magnific-popup.js',         
+        '/assets/js/plugins/mobilemenu.js',         
+        '/assets/js/plugins/owlcarousel.min.js',         
+        '/assets/js/plugins/gsap-animation.js',         
+        '/assets/js/plugins/nice-select.js',         
+        '/assets/js/plugins/waypoints.js',         
+        '/assets/js/plugins/slick-slider.js',         
+        '/assets/js/plugins/circle-progress.js',         
+        '/assets/js/main.js'     
       ];
       for (let i = 0; i < jsArray.length; i++) {
         let node = document.createElement('script');
