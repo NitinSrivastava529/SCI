@@ -55,11 +55,7 @@
                       <div class="content">
                           <a href="#">Nanak Ganj Sipri Bazar Jhansi <br class="d-lg-block d-none">-Uttar Pradesh, India - 284003</a>
                       </div>
-                  </div>
-
-                  <div class="phone-number">
-                      <a href="https://www.google.com/maps/@24.0098057,88.9892437,15z?entry=ttu" class="map" target="_blank">View Our Map</a>
-                  </div>
+                  </div>               
                  </div>
               </div>
           </div>
@@ -70,34 +66,34 @@
                   <div class="row">
                       <div class="col-lg-12">
                           <div class="input-area">
-                              <input type="text" placeholder="First Name">
+                              <input type="text" placeholder="First Name" (keyup)="onChnage()" [(ngModel)]="obj.fName">
                           </div>
                       </div>
 
                       <div class="col-lg-12">
                           <div class="input-area">
-                              <input type="text" placeholder="Last Name">
+                              <input type="text" placeholder="Last Name" (keyup)="onChnage()"  [(ngModel)]="obj.lName">
                           </div>
                       </div>
 
                       <div class="col-lg-12">
                           <div class="input-area">
-                              <input type="email" placeholder="Email Address">
+                              <input type="email" placeholder="Email Address" (keyup)="onChnage()"  [(ngModel)]="obj.email">
                           </div>
                       </div>
                       <div class="col-lg-12">
                           <div class="input-area">
-                              <input type="number" placeholder="Phone Number">
+                              <input type="number" placeholder="Phone Number" (keyup)="onChnage()"  [(ngModel)]="obj.phone">
                           </div>
                       </div>
                       <div class="col-lg-12">
                           <div class="input-area">
-                            <textarea placeholder="Your Message"></textarea>
+                            <textarea placeholder="Your Message" (keyup)="onChnage()"  [(ngModel)]="obj.message"></textarea>
                           </div>
                       </div>
                       <div class="col-lg-12">
                           <div class="input-area">
-                           <button type="submit" class="header-btn1">Get In Touch <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                           <a href="whatsapp://send?text={{shareContent}}&phone=917355335204" data-action="share/whatsapp/share" class="header-btn1">Get In Touch <span><i class="fa-solid fa-arrow-right"></i></span></a>
                           </div>
                       </div>
                   </div>

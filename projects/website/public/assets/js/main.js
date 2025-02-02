@@ -799,7 +799,7 @@ if ($('.text-anime-style-1').length) {
             color: '#FFFFFF'
           }
         }).on('circle-animation-progress', function (event, progress, stepValue) {
-          $(this).find('div').text((stepValue*100).toFixed() + "%");
+          $(this).find('div').text((stepValue*100).toFixed() + "+");
         }).stop();
       }
     });

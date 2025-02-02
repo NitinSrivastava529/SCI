@@ -5,30 +5,31 @@
   <img src="assets/img/bg/header-bg2.png" alt="" class="header-bg2">
   <img src="assets/img/bg/header-bg3.png" alt="" class="header-bg3">
   <div class="container">
-      <div class="row align-items-center">
-          <div class="col-lg-6">
-              <div class="header-main-area heading5">
-                  <h5><img src="assets/img/icons/logo-icons2.svg" alt="">Top #1 Software & Marketing Agency</h5>
-                  <h1 class="text-anime-style-3">Pioneering  Digital Marketing & Software Solutions Agency</h1>
-                  <p data-aos="fade-left" data-aos-duretion="1000">With a dedicated team of experts armed with the latest tools  techniques, we specialize in crafting bespoke Software & digital marketing solutions.</p>
-                  <div class="btn-area" data-aos="fade-left" data-aos-duretion="1200">
-                      <a href="contact.html" class="header-btn4 btn2">Start Ranking Now</a>
-                      <a href="contact.html" class="header-btn5">Contact Now</a>
-                  </div>
-              </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="header-main-area heading5">
+          <h5><img src="assets/img/icons/logo-icons2.svg" alt="">Top #1 Software & Marketing Agency</h5>
+          <h1 class="text-anime-style-3">Pioneering Digital Marketing & Software Solutions Agency</h1>
+          <p data-aos="fade-left" data-aos-duretion="1000">With a dedicated team of experts armed with the latest tools
+            techniques, we specialize in crafting bespoke Software & digital marketing solutions.</p>
+          <div class="btn-area" data-aos="fade-left" data-aos-duretion="1200">
+            <a href="contact.html" class="header-btn4 btn2">Start Ranking Now</a>
+            <a href="contact.html" class="header-btn5">Contact Now</a>
           </div>
-          <div class="col-lg-1"></div>
-          <div class="col-lg-5">
-              <div class="header-images-area" data-aos="zoom-in" data-aos-duretion="1000">
-                  <img src="assets/img/elements/elements8.png" alt="" class="elements6 aniamtion-key-1">
-                  <img src="assets/img/elements/star5.png" alt="" class="star5 keyframe5">
-                  <div class="img1">
-                      <img src="assets/img/bg/header-imgbg3.png" alt="" class="header-imgbg2">
-                      <img src="assets/img/all-images/header-img3.png" alt="">
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5">
+        <div class="header-images-area" data-aos="zoom-in" data-aos-duretion="1000">
+          <img src="assets/img/elements/elements8.png" alt="" class="elements6 aniamtion-key-1">
+          <img src="assets/img/elements/star5.png" alt="" class="star5 keyframe5">
+          <div class="img1">
+            <img src="assets/img/bg/header-imgbg3.png" alt="" class="header-imgbg2">
+            <img src="assets/img/all-images/header-img3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <!--===== HERO AREA ENDS =======-->
@@ -38,26 +39,17 @@
     <div class="row align-items-center">
       <div class="col-lg-2">
         <div class="sldier-head">
-          <p>Trusted by  <br class="d-lg-block d-none"> Our Clients</p>
+          <p>Trusted by <br class="d-lg-block d-none"> Our Clients</p>
         </div>
       </div>
       <div class="col-lg-10">
         <div class="slider-images-area owl-carousel">
-          <div class="img1">
-            <img src="assets/img/elements/brand-img1.png" alt="">
-          </div>
-          <div class="img1">
-            <img src="assets/img/elements/brand-img2.png" alt="">
-          </div>
-          <div class="img1">
-            <img src="assets/img/elements/brand-img3.png" alt="">
-          </div>
-          <div class="img1">
-            <img src="assets/img/elements/brand-img4.png" alt="">
-          </div>
-          <div class="img1">
-            <img src="assets/img/elements/brand-img5.png" alt="">
-          </div>
+          <ng-container *ngFor="let val of clientList;">
+            <div class="img1">
+              <img [src]="['assets/img/client/'+val.logo]" alt="">
+              <label>{{val.name}}</label>
+            </div>
+          </ng-container>        
         </div>
       </div>
     </div>
@@ -70,34 +62,34 @@
   <img src="assets/img/bg/about-bg1.png" alt="" class="about-bg1">
   <img src="assets/img/bg/about-bg2.png" alt="" class="about-bg2">
   <div class="container">
-      <div class="row align-items-center">
-          <div class="col-lg-6">
-              <div class="about-images-area reveal">
-                  <img src="assets/img/all-images/about-img3.png" alt="">
-              </div>
-          </div>
-          <div class="col-lg-6">
-              <div class="about-header-area heading6">
-                  <h5>About Us </h5>
-                  <h2 class="text-anime-style-3">Meet SCI Your Trusted Technical & Digital Marketing Partner</h2>
-                  <p data-aos="fade-left" data-aos-duretion="1000">
-                    Studentcareindia established in 2015, has emerged as a leading provider of school                                       
-                    management software solutions in India. Our journey began with a vision to revolutionize
-                    the way educational institutions operate by introducing innovative technology solutions.</p>
-                  <h3>Our Best Service Benefits :</h3>
-                  <div class="list-area" data-aos="fa-angle-left" data-aos-duretion="1100">
-                      <ul>
-                          <li><img src="assets/img/icons/check1.svg" alt="">Digital Marketing</li>
-                          <li><img src="assets/img/icons/check1.svg" alt="">Marketing Agency</li>
-                      </ul>
-                      <ul>
-                          <li><img src="assets/img/icons/check1.svg" alt="">SEO Optimization</li>
-                          <li><img src="assets/img/icons/check1.svg" alt="">First Working Process</li>
-                      </ul>
-                  </div>                 
-              </div>
-          </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="about-images-area reveal">
+          <img src="assets/img/all-images/about-img3.png" alt="">
+        </div>
       </div>
+      <div class="col-lg-6">
+        <div class="about-header-area heading6">
+          <h5>About Us </h5>
+          <h2 class="text-anime-style-3">Meet SCI Your Trusted Technical & Digital Marketing Partner</h2>
+          <p data-aos="fade-left" data-aos-duretion="1000">
+            Studentcareindia established in 2015, has emerged as a leading provider of school
+            management software solutions in India. Our journey began with a vision to revolutionize
+            the way educational institutions operate by introducing innovative technology solutions.</p>
+          <h3>Our Best Service Benefits :</h3>
+          <div class="list-area" data-aos="fa-angle-left" data-aos-duretion="1100">
+            <ul>
+              <li><img src="assets/img/icons/check1.svg" alt="">Digital Marketing</li>
+              <li><img src="assets/img/icons/check1.svg" alt="">Marketing Agency</li>
+            </ul>
+            <ul>
+              <li><img src="assets/img/icons/check1.svg" alt="">SEO Optimization</li>
+              <li><img src="assets/img/icons/check1.svg" alt="">First Working Process</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <!--===== ABOUT AREA ENDS =======-->
@@ -105,105 +97,111 @@
 <!--===== SERVICE AREA STARTS =======-->
 <div class="service3-section-area sp1">
   <div class="container">
-      <div class="row">
-          <div class="col-lg-8 m-auto">
-              <div class="service-header-area text-center heading6">
-                  <h5>Services</h5>
-                  <h2 class="text-anime-style-3">Elevating Your Online Presence</h2>
-              </div>
-          </div>
+    <div class="row">
+      <div class="col-lg-8 m-auto">
+        <div class="service-header-area text-center heading6">
+          <h5>Services</h5>
+          <h2 class="text-anime-style-3">Elevating Your Online Presence</h2>
+        </div>
       </div>
-      <div class="row">
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="800">
-              <div class="service2-boxarea">
-                  <div class="icons">
-                      <img src="assets/img/icons/service-icon5.svg" alt="">
-                  </div>
-                  <div class="space32"></div>
-                  <div class="content">
-                      <a href="service1.html">SMS Integration</a>
-                      <p>SMS integration refers to the process of incorporating Short Message Service (SMS) functionality into an application...</p>
-                      <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-              </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="800">
+        <div class="service2-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon5.svg" alt="">
           </div>
-  
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1000">
-              <div class="service2-boxarea">
-                  <div class="icons">
-                      <img src="assets/img/icons/service-icon6.svg" alt="">
-                  </div>
-                  <div class="space32"></div>
-                  <div class="content">
-                      <a href="#">Biometric Integration</a>
-                      <p>A biometric device is a piece of hardware used to capture, process, and authenticate biometric data, which is then...</p>
-                      <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-              </div>
+          <div class="space32"></div>
+          <div class="content">
+            <a href="service1.html">SMS Integration</a>
+            <p>SMS integration refers to the process of incorporating Short Message Service (SMS) functionality into an
+              application...</p>
+            <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-  
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1200">
-              <div class="service2-boxarea">
-                  <div class="icons">
-                      <img src="assets/img/icons/service-icon7.svg" alt="">
-                  </div>
-                  <div class="space32"></div>
-                  <div class="content">
-                      <a href="#">WhatsApp Integrations</a>
-                      <p>- WhatsApp Integration refers to the process of incorporating WhatsApp messaging features into your application...</p>
-                      <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="800">
-              <div class="service2-boxarea">
-                  <div class="icons">
-                      <img src="assets/img/icons/service-icon8.svg" alt="">
-                  </div>
-                  <div class="space32"></div>
-                  <div class="content">
-                      <a href="#">Smart class</a>
-                      <p>A smart class is an educational environment that integrates technology into the teaching and learning process to enhance engagement...</p>
-                      <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1000">
-              <div class="service2-boxarea">
-                  <div class="icons">
-                      <img src="assets/img/icons/service-icon9.svg" alt="">
-                  </div>
-                  <div class="space32"></div>
-                  <div class="content">
-                      <a href="#">Cloud-Based Solution</a>
-                      <p>Hosted on the cloud, offering easy access from anywhere with an internet connection, regular updates, and low...</p>
-                      <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1200">
-              <div class="service2-boxarea">
-                  <div class="icons">
-                      <img src="assets/img/icons/service-icon10.svg" alt="">
-                  </div>
-                  <div class="space32"></div>
-                  <div class="content">
-                      <a href="#">Attendance Tracking</a>
-                      <p>Real-time tracking of student attendance in class, extracurricular activities, and school events, Analytics to track...</p>
-                      <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-12">
-              <div class="space30"></div>
-              <div class="btn-area1 text-center" data-aos="fade-up" data-aos-duretion="1200">
-                  <a routerLink="/services" class="header-btn5">View More Services</a>
-              </div>
-          </div>
+        </div>
       </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1000">
+        <div class="service2-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon6.svg" alt="">
+          </div>
+          <div class="space32"></div>
+          <div class="content">
+            <a href="#">Biometric Integration</a>
+            <p>A biometric device is a piece of hardware used to capture, process, and authenticate biometric data,
+              which is then...</p>
+            <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1200">
+        <div class="service2-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon7.svg" alt="">
+          </div>
+          <div class="space32"></div>
+          <div class="content">
+            <a href="#">WhatsApp Integrations</a>
+            <p>- WhatsApp Integration refers to the process of incorporating WhatsApp messaging features into your
+              application...</p>
+            <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="800">
+        <div class="service2-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon8.svg" alt="">
+          </div>
+          <div class="space32"></div>
+          <div class="content">
+            <a href="#">Smart class</a>
+            <p>A smart class is an educational environment that integrates technology into the teaching and learning
+              process to enhance engagement...</p>
+            <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1000">
+        <div class="service2-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon9.svg" alt="">
+          </div>
+          <div class="space32"></div>
+          <div class="content">
+            <a href="#">Cloud-Based Solution</a>
+            <p>Hosted on the cloud, offering easy access from anywhere with an internet connection, regular updates, and
+              low...</p>
+            <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1200">
+        <div class="service2-boxarea">
+          <div class="icons">
+            <img src="assets/img/icons/service-icon10.svg" alt="">
+          </div>
+          <div class="space32"></div>
+          <div class="content">
+            <a href="#">Attendance Tracking</a>
+            <p>Real-time tracking of student attendance in class, extracurricular activities, and school events,
+              Analytics to track...</p>
+            <a routerLink="/services" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="space30"></div>
+        <div class="btn-area1 text-center" data-aos="fade-up" data-aos-duretion="1200">
+          <a routerLink="/services" class="header-btn5">View More Services</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <!--===== SERVICE AREA ENDS =======-->
@@ -220,166 +218,161 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-          <div class="cs_case_study_1_list">
-            <div class="cs_case_study cs_style_1 cs_hover_active active">
-              <a href="case-single.html" class="cs_case_study_thumb cs_bg_filed" data-src="assets/img/all-images/case-img1.png"></a>
-              <div class="content-area1">
-                <a href="case-single.html">Website  Design & Development</a>
-              </div>
-              <div class="content-area">
-                <a href="case-single.html">Website  Design & Development </a>
-                <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your online presence driving.</p>
-              </div>
+        <div class="cs_case_study_1_list">
+          <div class="cs_case_study cs_style_1 cs_hover_active active">
+            <a href="case-single.html" class="cs_case_study_thumb cs_bg_filed"
+              data-src="assets/img/all-images/case-img1.png"></a>
+            <div class="content-area1">
+              <a href="case-single.html">Website Design & Development</a>
             </div>
-            <div class="cs_case_study cs_style_1 cs_hover_active">
-              <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb2 cs_bg_filed" data-src="assets/img/all-images/case-img2.png"></a>
-              <div class="content-area1">
-                <a href="case-single.html">SEO</a>
-              </div>
-              <div class="content-area">
-                <a href="case-single.html">SEO</a>
-                <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your online presence driving.</p>
-              </div>
-            </div>
-            <div class="cs_case_study cs_style_1 cs_hover_active">
-              <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb3 cs_bg_filed" data-src="assets/img/all-images/case-img3.png"></a>
-              <div class="content-area1">
-                <a href="case-single.html">PPC Advertising</a>
-              </div>
-              <div class="content-area">
-                <a href="case-single.html">PPC Advertising</a>
-                <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your online presence driving.</p>
-              </div>
-            </div>
-            <div class="cs_case_study cs_style_1 cs_hover_active">
-              <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb4 cs_bg_filed" data-src="assets/img/all-images/case-img4.png"></a>
-              <div class="content-area1">
-                <a href="case-single.html">Social Media Marketing</a>
-              </div>
-              <div class="content-area">
-                <a href="case-single.html">Social Media Marketing</a>
-                <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your online presence driving.</p>
-              </div>
-            </div>
-            <div class="cs_case_study cs_style_1 cs_hover_active">
-              <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb5 cs_bg_filed" data-src="assets/img/all-images/case-img5.png"></a>
-              <div class="content-area1">
-                <a href="case-single.html">Content Marketing</a>
-              </div>
-              <div class="content-area">
-                <a href="case-single.html">Content Marketing</a>
-                <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your online presence driving.</p>
-              </div>
-            </div>
-            <div class="cs_case_study cs_style_1 cs_hover_active">
-              <a href="#" class="cs_case_study_thumb cs_case_study_thumb6 cs_bg_filed" data-src="assets/img/all-images/case-img6.png"></a>
-              <div class="content-area1">
-                <a href="case-single.html">Email Marketing</a>
-              </div>
-              <div class="content-area">
-                <a href="case-single.html">Email Marketing</a>
-                <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your online presence driving.</p>
-              </div>
-            </div>
-            <div class="cs_case_study cs_style_1 cs_hover_active " style="margin: 0 !important;">
-              <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb7 cs_bg_filed" data-src="assets/img/all-images/case-img7.png"></a>
-              <div class="content-area1">
-                <a href="case-single.html">Analytics & Reporting</a>
-              </div>
-              <div class="content-area">
-                <a href="case-single.html">Analytics & Reporting</a>
-                <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your online presence driving.</p>
-              </div>
+            <div class="content-area">
+              <a href="case-single.html">Website Design & Development </a>
+              <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your
+                online presence driving.</p>
             </div>
           </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--===== TESTIMONIAL AREA STARTS =======-->
-<div class="testimonial3-section-area sp1">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-5 m-auto">
-      <div class="testimonial-header heading6 text-center">
-        <h5>Testimonials</h5>
-        <h2 class="text-anime-style-3">What Our Client Say</h2>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-6 m-auto" data-aos="zoom-out" data-aos-duretion="1200">
-    <div class="testimonial2-owl-carousel-area owl-carousel">
-      <div class="testimonial-author-box">
-        <ul>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-        </ul>
-        <p class="pera">“Partnering with SEOC has been a transformative experience for our business. Their comprehensive approach to digital marketing has not only elevated our online presence but also streamlined our marketing efforts across multiple channels.”</p>
-        <div class="content-area">
-          <div class="images-content">
-            <div class="img1">
-              <img src="assets/img/all-images/testimonial-img3.png" alt="">
+          <div class="cs_case_study cs_style_1 cs_hover_active">
+            <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb2 cs_bg_filed"
+              data-src="assets/img/all-images/case-img2.png"></a>
+            <div class="content-area1">
+              <a href="case-single.html">SEO</a>
             </div>
-            <div class="content">
-              <a href="team.html">Orlando Schulist</a>
-              <p>Company Owner</p>
+            <div class="content-area">
+              <a href="case-single.html">SEO</a>
+              <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your
+                online presence driving.</p>
             </div>
           </div>
-          <img src="assets/img/icons/quito1.svg" alt="" class="quito1">
-        </div>
-      </div>
-
-      <div class="testimonial-author-box">
-        <ul>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-        </ul>
-        <p class="pera">We've had the pleasure of working with [Your Company Name] for several years now, and they have consistently exceeded our expectations in every aspect. From the initial consultation to ongoing support, their team has demonstrated a deep understanding.”</p>
-        <div class="content-area">
-          <div class="images-content">
-            <div class="img1">
-              <img src="assets/img/all-images/testimonial-img4.png" alt="">
+          <div class="cs_case_study cs_style_1 cs_hover_active">
+            <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb3 cs_bg_filed"
+              data-src="assets/img/all-images/case-img3.png"></a>
+            <div class="content-area1">
+              <a href="case-single.html">PPC Advertising</a>
             </div>
-            <div class="content">
-              <a href="team.html">Ms. Timmy Harvey</a>
-              <p>Company Owner</p>
+            <div class="content-area">
+              <a href="case-single.html">PPC Advertising</a>
+              <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your
+                online presence driving.</p>
             </div>
           </div>
-          <img src="assets/img/icons/quito1.svg" alt="" class="quito1">
-        </div>
-      </div>
-      <div class="testimonial-author-box">
-        <ul>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-          <li><i class="fa-solid fa-star"></i></li>
-        </ul>
-        <p class="pera">“Partnering with SEOC has been a transformative experience for our business. Their comprehensive approach to digital marketing has not only elevated our online presence but also streamlined our marketing efforts across multiple channels.”</p>
-        <div class="content-area">
-          <div class="images-content">
-            <div class="img1">
-              <img src="assets/img/all-images/testimonial-img3.png" alt="">
+          <div class="cs_case_study cs_style_1 cs_hover_active">
+            <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb4 cs_bg_filed"
+              data-src="assets/img/all-images/case-img4.png"></a>
+            <div class="content-area1">
+              <a href="case-single.html">Social Media Marketing</a>
             </div>
-            <div class="content">
-              <a href="team.html">Orlando Schulist</a>
-              <p>Company Owner</p>
+            <div class="content-area">
+              <a href="case-single.html">Social Media Marketing</a>
+              <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your
+                online presence driving.</p>
             </div>
           </div>
-          <img src="assets/img/icons/quito1.svg" alt="" class="quito1">
+          <div class="cs_case_study cs_style_1 cs_hover_active">
+            <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb5 cs_bg_filed"
+              data-src="assets/img/all-images/case-img5.png"></a>
+            <div class="content-area1">
+              <a href="case-single.html">Content Marketing</a>
+            </div>
+            <div class="content-area">
+              <a href="case-single.html">Content Marketing</a>
+              <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your
+                online presence driving.</p>
+            </div>
+          </div>
+          <div class="cs_case_study cs_style_1 cs_hover_active">
+            <a href="#" class="cs_case_study_thumb cs_case_study_thumb6 cs_bg_filed"
+              data-src="assets/img/all-images/case-img6.png"></a>
+            <div class="content-area1">
+              <a href="case-single.html">Email Marketing</a>
+            </div>
+            <div class="content-area">
+              <a href="case-single.html">Email Marketing</a>
+              <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your
+                online presence driving.</p>
+            </div>
+          </div>
+          <div class="cs_case_study cs_style_1 cs_hover_active " style="margin: 0 !important;">
+            <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb7 cs_bg_filed"
+              data-src="assets/img/all-images/case-img7.png"></a>
+            <div class="content-area1">
+              <a href="case-single.html">Analytics & Reporting</a>
+            </div>
+            <div class="content-area">
+              <a href="case-single.html">Analytics & Reporting</a>
+              <p>We understand the critical role that a well-designed and user-friendly website plays in shaping your
+                online presence driving.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-<!--===== TESTIMONIAL AREA ENDS =======-->
 
+<div class="skills-section-area sp2">
+  <img src="assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
+  <img src="assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
+  <div class="container">
+    <!-- <div class="row">
+          <div class="col-lg-3 m-auto">
+              <div class="skills-header text-center heading2">
+                  <h5>Skills</h5>
+                  <h2>Our Skills</h2>
+              </div>
+          </div>
+      </div> -->
+    <div class="col-lg-10 m-auto">
+      <div class="circle-progress-area">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="progresbar">
+              <div class="progressbar">
+                <div class="circle" data-percent="200">
+                  <canvas></canvas>
+                  <div>200+</div>
+                </div>
+              </div>
+              <p>SCHOOLS</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="progresbar">
+              <div class="progressbar">
+                <div class="circle two" data-percent="50">
+                  <canvas></canvas>
+                  <div>50+</div>
+                </div>
+              </div>
+              <p>COLLEGES & UNIVERSITY</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="progresbar">
+              <div class="progressbar">
+                <div class="circle three" data-percent="10">
+                  <canvas></canvas>
+                  <div>10+</div>
+                </div>
+              </div>
+              <p>YEARS EXPERTIES</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="progresbar">
+              <div class="progressbar">
+                <div class="circle four" data-percent="40000">
+                  <canvas></canvas>
+                  <div>4 Lacs +</div>
+                </div>
+              </div>
+              <p>STUDENTS </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

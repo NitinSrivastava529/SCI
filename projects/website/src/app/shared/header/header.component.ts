@@ -9,5 +9,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  shareContent:string="Hi Student Care India,\n i want to get Enquiry about some Service.";
 }
