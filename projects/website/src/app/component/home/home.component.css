@@ -3,3 +3,12 @@
     z-index: 1;
     background: #fb3189;
 }
+.slider3-section-area .slider-images-area .img1 img {
+    height: 110px;
+    width: 110px;
+    object-fit: contain;
+    /* background: #f8cdcd; */
+    /* padding: 10px; */
+    margin-bottom: 5px;
+
+}

@@ -12,20 +12,18 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
   clientList:any=[
-    {name:'Sri Ramdham Uni.',logo:'1 (1).jpg'},    
-    {name:'Sunrise Vidyapith',logo:'1 (1).png'},    
-    {name:'S.R. Public School',logo:'1 (2).jpg'},    
-    {name:'Sri Maa Sharda',logo:'1 (2).png'},    
-    {name:'I.P.S. Gwalior',logo:'1 (3).JPG'},    
-    {name:'School Name',logo:'1 (3).png'},    
-    {name:'Sunrise Public School',logo:'1 (4).jpg'},    
-    {name:'D.S. School',logo:'1 (5).jpg'},    
-    {name:'Kanha Diagnostic Centre',logo:'1 (6).jpg'},    
-    {name:'School Name',logo:'1 (7).jpg'},    
-    {name:'School Name',logo:'1 (8).jpg'},    
-    {name:'School Name',logo:'1 (9).jpg'},    
-    {name:'School Name',logo:'1 (10).jpg'},    
-    {name:'School Name',logo:'1 (11).jpg'}    
+    {name:'DISHA DARSHAN SCHOOL',logo:'DISHA DARSHAN SCHOOL.jpg'},    
+    {name:'I.P.S GROUP OF SCHOOL',logo:'I.P.S GROUP OF SCHOOL.jpg'},         
+    {name:'OCEAN PUBLIC SCHOOL',logo:'OCEAN PUBLIC SCHOOL.jpg'},         
+    {name:'Pt.G.P.NAYAK GIRLS INTER COLLEGE',logo:'Pt.G.P.NAYAK GIRLS INTER COLLEGE.jpg'},         
+    {name:'R.J.L.P. SCHOOL',logo:'R.J.L.P.SCHOOL.jpg'},         
+    {name:'S.G.M.PUBLIC SCHOOL',logo:'S.G.M.PUBLIC SCHOOL.jpg'},         
+    {name:'S.R.PUBLIC SCHOOL',logo:'S.R.PUBLIC SCHOOL.jpg'},         
+    {name:'S.V.I. ACADEMY',logo:'S.V.I. ACADEMY.jpg'},         
+    {name:'ST.XAVIERS SCHOOL',logo:'ST.XAVIERS SCHOOL.jpg'},         
+    {name:'SUNRISE PUBLIC SCHOOL',logo:'SUNRISE PUBLIC SCHOOL.jpg'},         
+    {name:'SUNRISE VIDHYAPEETH',logo:'SUNRISE VIDHYAPEETH.jpg'},         
+    {name:'THAKUR MAHENDRA SCHOOL',logo:'THAKUR MAHENDRA SCHOOL.jpg'}         
   ];
   _config=inject(ConfigService)
   constructor(){   
